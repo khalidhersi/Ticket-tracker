@@ -1,0 +1,19 @@
+@use "../../assets/sass/variables" as *;
+
+.button {
+  min-width: 80px;
+  padding: 5px 12px;
+  border-radius: 15px;
+  border: none;
+
+  &.button--primary{
+    background-color: transparent;
+    border: 2px solid $color-primary;
+  }
+
+  &.button--secondary{
+      background-color: $color-secondary;
+}
+}
+
+
