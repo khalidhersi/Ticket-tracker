@@ -1,6 +1,20 @@
 @use "./assets/sass/_variables.scss" as *;
 
 .app {
+  background: #bece97;
+  background: -moz-linear-gradient(
+    -45deg,
+    #bece97 0%,
+    #08a1a4 100%,
+    #9dc500 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #bece97 0%,
+    #08a1a4 100%,
+    #9dc500 100%
+  );
+  background: linear-gradient(135deg, #bece97 0%, #08a1a4 100%, #9dc500 100%);
   .greeting {
     text-align: center;
 
