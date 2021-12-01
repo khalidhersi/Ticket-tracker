@@ -32,9 +32,11 @@ const App = () => {
         </h1>
       </header>
       <main className="main">
-        <Ticket> 
+        <Ticket /> 
           <Employee />
-        </Ticket>
+        <Ticket /> 
+        <Ticket /> 
+        <Ticket /> 
       </main>
     </div>
   );

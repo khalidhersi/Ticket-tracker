@@ -3,14 +3,16 @@ import "./Ticket.scss";
 
 
 const Ticket = (props) => {
-    return <div className="ticket--container">
-        <div className="ticket__border">
-            <div className="ticket__box">
-                <h3 className="ticket__title">Ticket</h3>
-                <div className="ticket__counter"></div>
-                <h5 className="ticket__name">Name:_________________</h5>
-            </div>
+    return <div className="ticket__border">
+        <h3 className="ticket__title">Ticket</h3>
+        <div className="ticket__counter">
+            <h5 className="ticket__counter-title">Counter</h5>
+            <p className="counter">0</p>
+            <p className="minus">-</p>
+            <p className="plus">+</p>
         </div>
+        <h5 className="ticket__name">Name:________</h5>
+        <h5 className="ticket__role">Role:____________</h5>
     </div>
 }
 

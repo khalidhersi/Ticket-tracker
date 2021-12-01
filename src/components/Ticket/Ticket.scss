@@ -1,30 +1,47 @@
 @use "../../assets/sass/_variables.scss" as *;
 
-.ticket--container {
-  border: 2px solid $color-black;
-  height: 500px;
-  width: 80%;
-  margin: 30px auto;
-  display: flex;
-  align-items: flex-start;
-
   .ticket__border {
     border: 2px solid $color-black;
     width: 35%;
+    height: 40%;
     border-radius: 20px;
     margin: 10px auto;
-    .ticket__box {
-      border: 2px solid $color-black;
-      width: 90%;
-      margin: 10px auto;
-      text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-      .ticket__counter {
-        border: 2px solid $color-primary;
-        width: 60%;
-        margin: auto;
-        height: 50px;
+    .ticket__counter {
+      border: 2px solid $color-black;
+      width: 70%;
+      height: 120px;
+      position: relative;
+      bottom: 20px;
+      text-align: center;
+      
+      .counter{
+        
       }
+      .minus{
+
+      }
+      .plus{
+
+      }
+
     }
+      .ticket__title{
+        position: relative;
+        bottom: 15px;
+      }
+      .ticket__name{
+        position: relative;
+        bottom: 35px;
+        right: 70px;
+      }
+      .ticket__role{
+        position: relative;
+        bottom: 98px;
+        left: 50px;
+      }
   }
-}
+

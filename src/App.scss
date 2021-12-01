@@ -15,6 +15,16 @@
     #9dc500 100%
   );
   background: linear-gradient(135deg, #bece97 0%, #08a1a4 100%, #9dc500 100%);
+  .main {
+    border: 2px solid $color-black;
+    height: 500px;
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
   .greeting {
     text-align: center;
 
