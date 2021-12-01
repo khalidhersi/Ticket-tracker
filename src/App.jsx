@@ -5,12 +5,17 @@ import moon from "./assets/images/moon.png";
 import Nav from "./components/Nav/Nav";
 import Ticket from "./components/Ticket/Ticket";
 import Employee from "./components/Employee/Employee";
+import team from "./data/team";
 
 const App = () => {
 
   const currentHour = new Date().getHours();
   let greetingImg = sunrise;
   let greetingTime = "Morning!";
+
+  const teamArr = team.map(employee => {
+    return employee.id
+  })
 
   if (currentHour >= 12) {
     greetingImg = sun;
@@ -32,8 +37,8 @@ const App = () => {
         </h1>
       </header>
       <main className="main">
-        <Ticket /> 
-          <Employee />
+        <Ticket id={teamArr}/> 
+        <Employee />
         <Ticket /> 
         <Ticket /> 
         <Ticket /> 

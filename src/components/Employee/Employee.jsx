@@ -3,9 +3,12 @@ import "./Employee.scss";
 
 
 const Employee = (props) => {
-    return <div>
-        
-    </div>
+    const {name, role} = props;
+
+    return <>
+        <p>{name}</p>
+        <p>{role}</p>
+    </>
 }
 
 export default Employee;
