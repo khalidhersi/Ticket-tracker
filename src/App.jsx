@@ -4,7 +4,6 @@ import sun from "./assets/images/sun.png";
 import moon from "./assets/images/moon.png";
 import Nav from "./components/Nav/Nav";
 import Ticket from "./components/Ticket/Ticket";
-import Employee from "./components/Employee/Employee";
 import team from "./data/team";
 
 const App = () => {

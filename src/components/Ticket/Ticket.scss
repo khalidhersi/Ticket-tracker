@@ -28,6 +28,7 @@
         left: 1px;
         border-radius: 25px;
         margin: 0 15px;
+        background-color: rgba(155, 232, 255, 0.637);
       }
 
       .reset {
@@ -35,6 +36,7 @@
         bottom: 38px;
         left: 1px;
         border-radius: 25px;
+        background-color: rgba(240, 255, 155, 0.637);
       }
 
     } 
@@ -42,15 +44,18 @@
         position: relative;
         bottom: 15px;
       }
-      .ticket__name{
-        position: relative;
-        bottom: 35px;
-        right: 70px;
-      }
-      .ticket__role{
-        position: relative;
-        bottom: 98px;
-        left: 50px;
-      }
+      
   }
 
+@media screen and (min-width: 991px){
+  .info > * {
+    position: relative;
+    bottom: 32px;
+    .ticket__name{
+    
+      }
+      .ticket__role{
+    
+      }
+    }
+}
