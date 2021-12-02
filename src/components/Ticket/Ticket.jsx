@@ -1,5 +1,6 @@
 import React from "react";
 import "./Ticket.scss";
+import Employee from "../Employee/Employee";
 
 
 const Ticket = (props) => {
@@ -14,8 +15,7 @@ const {id} = props;
             <p className="minus">-</p>
             <p className="plus">+</p>
         </div>
-        <h5 className="ticket__name">Name:________</h5>
-        <h5 className="ticket__role">Role:____________</h5>
+        <Employee />
     </div>
 }
 

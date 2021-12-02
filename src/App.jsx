@@ -13,8 +13,15 @@ const App = () => {
   let greetingImg = sunrise;
   let greetingTime = "Morning!";
 
-  const teamArr = team.map(employee => {
+
+  const teamIdeArr = team.map(employee => {
     return employee.id
+  })
+  const teamNameArr = team.map(employee => {
+    return employee.name
+  })
+  const teamRoleArr = team.map(employee => {
+    return employee.role
   })
 
   if (currentHour >= 12) {
@@ -37,8 +44,7 @@ const App = () => {
         </h1>
       </header>
       <main className="main">
-        <Ticket id={teamArr}/> 
-        <Employee />
+        <Ticket id={teamIdeArr}/> 
         <Ticket /> 
         <Ticket /> 
         <Ticket /> 

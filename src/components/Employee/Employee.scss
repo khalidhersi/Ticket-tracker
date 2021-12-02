@@ -1,1 +1,12 @@
 @use "../../assets/sass/_variables.scss" as *;
+
+.ticket__name{
+    position: relative;
+    bottom: 35px;
+    right: 70px;
+  }
+  .ticket__role{
+    position: relative;
+    bottom: 98px;
+    left: 50px;
+  }

@@ -6,8 +6,8 @@ const Employee = (props) => {
     const {name, role} = props;
 
     return <>
-        <p>{name}</p>
-        <p>{role}</p>
+        <h5 className="ticket__name">Name:________</h5>
+        <h5 className="ticket__role">Role:____________</h5>
     </>
 }
 
