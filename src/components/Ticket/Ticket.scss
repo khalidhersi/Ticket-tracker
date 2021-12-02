@@ -21,14 +21,23 @@
       .counter{
         
       }
-      .minus{
 
+      .buttons > * {
+        position: relative;
+        bottom: 38px;
+        left: 1px;
+        border-radius: 25px;
+        margin: 0 15px;
       }
-      .plus{
 
+      .reset {
+        position: relative;
+        bottom: 38px;
+        left: 1px;
+        border-radius: 25px;
       }
 
-    }
+    } 
       .ticket__title{
         position: relative;
         bottom: 15px;
