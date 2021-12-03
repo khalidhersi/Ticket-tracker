@@ -47,6 +47,12 @@ const App = () => {
         <Ticket /> 
         <Ticket /> 
         <Ticket /> 
+        <Ticket /> 
+        <Ticket /> 
+        <Ticket /> 
+        <Ticket /> 
+        <Ticket /> 
+        <Ticket /> 
       </main>
     </div>
   );

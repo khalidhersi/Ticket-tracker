@@ -10,9 +10,11 @@ const [counter, setCounter] = useState(0)
 
   const teamNameArr = team
     .filter((employee) => employee.name)
+    console.log(teamNameArr)
 
     const teamIdArr = team
-    .filter((employee) => employee.id)
+    .map((employee) => employee.id)
+    console.log(teamIdArr)
     
 const handleIncrement = () => {
     setCounter(counter + 1)
