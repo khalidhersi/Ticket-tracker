@@ -15,6 +15,10 @@ const [counter, setCounter] = useState(0)
     const teamIdArr = team
     .map((employee) => employee.id)
     console.log(teamIdArr)
+
+    const teaRoledArr = team
+    .map((employee) => employee.role)
+    console.log(teaRoledArr)
     
 const handleIncrement = () => {
     setCounter(counter + 1)
@@ -43,7 +47,7 @@ console.log(counter)
             </div>
             <button className="reset" onClick={handleReset}>Reset</button>
         </div>
-        <Employee nameArr={teamNameArr} indexArr={teamIdArr}/>
+        <Employee nameArr={teamNameArr} indexArr={teamIdArr} roleArr={teaRoledArr}/>
     </div>
 }
 
