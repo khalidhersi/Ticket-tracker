@@ -1,5 +1,5 @@
 {
-  "homepage": "http://khalidhersi.github.io/Ticket-tracker",
+  "homepage": "http://khalidhersi.github.io/ticket-tracker",
   "name": "ticket-tracker",
   "version": "0.1.0",
   "private": true,
@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.44.0"
+    "sass": "^1.44.0",
+    "gh-pages": "2.0.1"
   }
 }
