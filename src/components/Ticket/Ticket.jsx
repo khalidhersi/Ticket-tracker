@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "./Ticket.scss";
 import Employee from "../Employee/Employee";
 import team from "../../data/team";
-
+ 
 
 const Ticket = (props) => {
 
