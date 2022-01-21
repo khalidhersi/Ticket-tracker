@@ -1,6 +1,8 @@
 @use "./assets/sass/_variables.scss" as *;
 
 .app {
+  width: 150vh;
+  height: 400vh;
   background: #bece97;
   background: -moz-linear-gradient(
     -45deg,
@@ -15,17 +17,26 @@
     #9dc500 100%
   );
   background: linear-gradient(135deg, #bece97 0%, #08a1a4 100%, #9dc500 100%);
+  
   .main {
-    border: 2px solid $color-black;
-    width: 80%;
-    margin: 30px auto 0 auto;
+    width: 140vh;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 5em;
+    .ticket__container{
+      width: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   
   .greeting {
+    position: absolute;
     text-align: center;
+    top: 5em;
+    left: 4em;
 
     &__heading {
       color: $color-black;
@@ -53,7 +64,7 @@ button {
 
 @media (min-width: 992px) {
   .app {
-    max-width: 1200px;
+
     margin: 0 auto;
     display: grid;
     gap: 50px;

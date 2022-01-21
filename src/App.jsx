@@ -3,25 +3,21 @@ import sunrise from "./assets/images/sunrise.png";
 import sun from "./assets/images/sun.png";
 import moon from "./assets/images/moon.png";
 import Nav from "./components/Nav/Nav";
-import Ticket from "./components/Ticket/Ticket";
-import team from "./data/team";
+import team from "./data/team.js"
+import Employee from "./components/Employee/Employee";
+
 
 const App = () => {
+
+
+  const teamArrJSX = team.map(employee => {
+    console.log(employee.id)
+    return <Employee name={employee.name} role={employee.role} id={employee.id}/>
+  })
 
   const currentHour = new Date().getHours();
   let greetingImg = sunrise;
   let greetingTime = "Morning!";
-
-
-  const teamIdeArr = team.map(employee => {
-    return employee.id
-  })
-  const teamNameArr = team.map(employee => {
-    return employee.name
-  })
-  const teamRoleArr = team.map(employee => {
-    return employee.role
-  })
 
   if (currentHour >= 12) {
     greetingImg = sun;
@@ -43,16 +39,7 @@ const App = () => {
         </h1>
       </header>
       <main className="main">
-        <Ticket id={teamIdeArr}/> 
-        <Ticket /> 
-        <Ticket /> 
-        <Ticket /> 
-        <Ticket /> 
-        <Ticket /> 
-        <Ticket /> 
-        <Ticket /> 
-        <Ticket /> 
-        <Ticket /> 
+      <div className="ticket__container">{teamArrJSX}</div>
       </main>
     </div>
   );

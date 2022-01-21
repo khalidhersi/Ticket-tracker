@@ -1,24 +1,11 @@
 import React, {useState} from "react";
 import "./Ticket.scss";
-import Employee from "../Employee/Employee";
-import team from "../../data/team";
+
  
 
 const Ticket = (props) => {
 
 const [counter, setCounter] = useState(0)
-
-  const teamNameArr = team
-    .filter((employee) => employee.name)
-    console.log(teamNameArr)
-
-    const teamIdArr = team
-    .map((employee) => employee.id)
-    console.log(teamIdArr)
-
-    const teaRoledArr = team
-    .map((employee) => employee.role)
-    console.log(teaRoledArr)
     
 const handleIncrement = () => {
     setCounter(counter + 1)
@@ -47,7 +34,6 @@ console.log(counter)
             </div>
             <button className="reset" onClick={handleReset}>Reset</button>
         </div>
-        <Employee nameArr={teamNameArr} indexArr={teamIdArr} roleArr={teaRoledArr}/>
     </div>
 }
 

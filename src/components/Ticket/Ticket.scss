@@ -1,26 +1,23 @@
 @use "../../assets/sass/_variables.scss" as *;
 
   .ticket__border {
-    border: 2px solid $color-black;
-    width: 35%;
-    height: 40%;
+    width: fit-content;
+    height: 70%;
     border-radius: 20px;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     .ticket__counter {
-      border: 2px solid $color-black;
-      width: 70%;
+      border: 10px solid $color-black;
+      width: 20vh;
       height: 120px;
       position: relative;
       bottom: 20px;
       text-align: center;
       
-      .counter{
-        
-      }
 
       .buttons > * {
         position: relative;

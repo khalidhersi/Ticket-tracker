@@ -1,36 +1,15 @@
 import React from "react";
 import "./Employee.scss";
+import Ticket from "../Ticket/Ticket";
 
 
 const Employee = (props) => {
-    const {indexArr, nameArr, roleArr} = props;
-    console.log(indexArr)
+    const {id, name, role} = props;
 
-    const employeeRoleJSX = roleArr.map((employee, index) =>
-    (
-    <p className="name__p" key={(index + 1)}>{employee.role} </p>
-    ));
-
-
-  const employeeNameJSX = nameArr.map((employee, index) =>
-    (
-    <p className="name__p" key={(index + 1)}>{employee.name} </p>
-    ));
-
-    /* 
-      let count = []
-    const employeeId = indexArr.forEach(employee => {
-      console.log(employee)
-       count = employee
-    });
-    console.log(employeeId)
-        console.log(count) 
-    */
-    
-
-    return <div className="info">
-        <h5 className="ticket__name">Name:______ {employeeNameJSX}</h5>
-        <h5 className="ticket__role">Role:_______{employeeRoleJSX}</h5>
+    return <div className="container">
+         <Ticket /> 
+        <h5 className="ticket__name">Name: {name}</h5>
+        <h5 className="ticket__role">Role: {role}</h5>
     </div>
 }
 
