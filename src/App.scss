@@ -19,12 +19,10 @@
   background: linear-gradient(135deg, #bece97 0%, #08a1a4 100%, #9dc500 100%);
   
   .main {
-    width: 140vh;
+    position: relative;
+    top: 20em;
     display: flex;
     justify-content: center;
-    text-align: center;
-    position: relative;
-    top: 5em;
     .ticket__container{
       width: 100vh;
       display: flex;
@@ -65,12 +63,21 @@ button {
 @media (min-width: 992px) {
   .app {
 
+    
     margin: 0 auto;
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, min-content);
 
+    .main {
+      width: 140vh;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      top: 5em;
+    }
     .greeting {
       text-align: left;
       display: flex;
